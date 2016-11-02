@@ -1,0 +1,21 @@
+address id 30 hahaha
+  ip 10.123.13.0
+  ip 10.123.16.0
+  ip 10.123.5.0
+  ip 10.123.6.0
+ exit 
+rule id 25387
+  action permit
+  src-zone "devnet"
+  dst-zone "untrust"
+  src-ip 10.123.13.0/24
+  src-ip 10.123.16.0/24
+  src-ip 10.123.5.0/24
+  src-ip 10.123.6.0/24
+  dst-ip 10.140.48.24/32
+  service "tcp_6693-6693"
+  description "20151127175140832900"
+exit
+
+
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>catalog_page</title>
+</head>
+<body>
+	<ul>
+        {% for i in range(directory) %}
+            <li>
+            <label>
+                <input type="checkbox">
+                <a href="{{ links[i] }}">{{ directory[i] }}</a></li>
+            </label>
+            </li>
+            
+        {% end %}   
+    </ul>
+</body>
+</html>
